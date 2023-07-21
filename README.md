@@ -22,11 +22,16 @@ https://drive.google.com/drive/folders/1oZOJ3XSfzA7ky3hr09QI7X6HMGR9NsLX?usp=sha
 RPM-based системы обычно идут с уже включенным ACL, который позволяет легко решить поставленную задачу. 
 
 Создаем пользователей 
+![useradd](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/useradd.png)
 
 Создаем директории и файл
+![mkdir](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/dirs%26files.png)
 
 Задаем правила ACL
+![setfacl](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/setfacl.png)
 
 Смотрим правила ACL
+![getfacl](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/getfacl.png)
 
 Hello Neoflex
+![Hello Neoflex](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/hello_neoflex.png)
