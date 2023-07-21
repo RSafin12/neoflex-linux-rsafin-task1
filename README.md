@@ -15,7 +15,7 @@
 VM и приватный ключ доступны по ссылке  
 https://drive.google.com/drive/folders/1oZOJ3XSfzA7ky3hr09QI7X6HMGR9NsLX?usp=sharing
 
-Приватный ключ в файле id_rsa  
+Приватный ключ в файле neoflex_rsa  
 Порт SSH: 33555  
 
 ## Задание 5
