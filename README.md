@@ -12,26 +12,26 @@
 `ssh neoflex@main -p 33555`
 
 ## Задание 4
-VM и приватный ключ доступны по ссылке
+VM и приватный ключ доступны по ссылке  
 https://drive.google.com/drive/folders/1oZOJ3XSfzA7ky3hr09QI7X6HMGR9NsLX?usp=sharing
 
-Приватный ключ в файле id_rsa
-Порт SSH: 33555
+Приватный ключ в файле id_rsa  
+Порт SSH: 33555  
 
 ## Задание 5
-RPM-based системы обычно идут с уже включенным ACL, который позволяет легко решить поставленную задачу. 
+RPM-based системы обычно идут с уже включенным ACL, который позволяет легко решить поставленную задачу.   
 
-Создаем пользователей 
+Создаем пользователей   
 ![useradd](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/useradd.png)
 
-Создаем директории и файл
+Создаем директории и файл  
 ![mkdir](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/dirs%26files.png)
 
-Задаем правила ACL
+Задаем правила ACL  
 ![setfacl](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/setfacl.png)
 
-Смотрим правила ACL
+Смотрим правила ACL  
 ![getfacl](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/getfacl.png)
 
-Hello Neoflex
+Hello Neoflex  
 ![Hello Neoflex](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/hello_neoflex.png)
