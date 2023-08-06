@@ -72,7 +72,8 @@ ENTRYPOINT ["/go/bin/main"]
 ```
 
 Dockerfile_dev
-```FROM golang:1.17.0-alpine3.13 AS build
+```
+FROM golang:1.17.0-alpine3.13 AS build
 
 RUN apk update && apk add git
 #WORKDIR /go/delivery
