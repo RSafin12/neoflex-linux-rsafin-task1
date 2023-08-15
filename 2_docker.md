@@ -24,9 +24,9 @@ CMD ["catalina.sh", "run"]
 ## Задание 2
 ```bash
 docker run \
---name test_db \
---mount src=/tmp,dst=/var/lib/postgresql/data,type=bind \
---env POSTGRES_PASSWORD=1234pass \ 
+--name test_db_2 \
+--mount dst=/var/lib/postgresql/data,type=tmpfs \
+--env POSTGRES_PASSWORD=1234pass \
 postgres:13 env
 ```
 ## Задание 3
