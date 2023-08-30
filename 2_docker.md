@@ -1,21 +1,23 @@
 ## Задание 1  
 ```
-FROM maven:3.6-jdk-8-alpine AS build
+FROM maven:3.8.6-jdk-8 as builder
 
 WORKDIR /app
 
-COPY pom.xml .
 COPY src ./src
+COPY pom.xml ./pom.xml
+
 RUN mvn -e -B package
 
 FROM tomcat:8.5
-COPY --from=build /app/target/demo.war /usr/local/tomcat/webapps/demo.war
+COPY --from=builder /app/target/demo.war /usr/local/tomcat/webapps/demo.war
 
 RUN echo "export JAVA_OPTS=\"-Dapp.env=staging\"" > /usr/local/tomcat/bin/setenv.sh
 
 EXPOSE 8080
 
 CMD ["catalina.sh", "run"]
+
 ```
 ![demo](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/docker_%20screens/1_demo.png)
 ![logs](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/docker_%20screens/1_inter.png)
