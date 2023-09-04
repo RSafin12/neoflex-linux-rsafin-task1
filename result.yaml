@@ -50,11 +50,3 @@ spec:
       - image: "rsafin12/iowa:v2"
         imagePullPolicy: IfNotPresent
         name: neo-fixit
-        # livenessProbe:
-        #   httpGet:
-        #     path: /demo/
-        #     port: http
-        # readinessProbe:
-        #   httpGet:
-        #     path: /demo/
-        #     port: http

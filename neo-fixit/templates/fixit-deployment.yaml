@@ -28,11 +28,3 @@ spec:
       - image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default "v2" }}"
         imagePullPolicy: {{ .Values.image.pullPolicy }}
         name: {{ .Chart.Name }}
-        # livenessProbe:
-        #   httpGet:
-        #     path: /demo/
-        #     port: http
-        # readinessProbe:
-        #   httpGet:
-        #     path: /demo/
-        #     port: http
