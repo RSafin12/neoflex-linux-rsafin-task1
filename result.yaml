@@ -1,0 +1,60 @@
+---
+# Source: neo-fixit/templates/super_service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-neo-fixit-srv
+  labels:
+    helm.sh/chart: neo-fixit-0.1.0
+    app.kubernetes.io/name: neo-fixit
+    app.kubernetes.io/instance: app
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: NodePort
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+    nodePort: 30800
+    name: http 
+  selector:
+    app.kubernetes.io/name: neo-fixit
+    app.kubernetes.io/instance: app
+---
+# Source: neo-fixit/templates/fixit-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-neo-fixit
+  labels:
+    helm.sh/chart: neo-fixit-0.1.0
+    app.kubernetes.io/name: neo-fixit
+    app.kubernetes.io/instance: app
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: neo-fixit
+      app.kubernetes.io/instance: app
+  template:
+    metadata:
+      # name: fixit
+      labels:
+        app.kubernetes.io/name: neo-fixit
+        app.kubernetes.io/instance: app
+    spec:
+      containers:
+      - image: "rsafin12/iowa:v2"
+        imagePullPolicy: IfNotPresent
+        name: neo-fixit
+        # livenessProbe:
+        #   httpGet:
+        #     path: /demo/
+        #     port: http
+        # readinessProbe:
+        #   httpGet:
+        #     path: /demo/
+        #     port: http
