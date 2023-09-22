@@ -3,6 +3,12 @@
 ![1st_task](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/1st_task.png)  
 
 ### Задание 2 
+Before  
+![before](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/2nd_before.png)  
+
+After  
+![after](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/2nd_after.png)
+
 ### Задание 3
 Runner запущен    
 ![runner](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/runner.png)    
