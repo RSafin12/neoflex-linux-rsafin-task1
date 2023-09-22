@@ -1,4 +1,7 @@
 ### Задание 1 
+Токен сделать конечно можно, однако это не очень удобно. Проще настроить работу через SSH-ключи, как это настроено у меня.   
+![1st_task](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/1st_task.png)  
+
 ### Задание 2 
 ### Задание 3
 Runner запущен    
