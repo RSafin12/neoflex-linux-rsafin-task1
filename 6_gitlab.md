@@ -34,6 +34,8 @@ Pipeline состоит из 2 этапов, первым идет Build
 и доступно в браузере 
 ![app3](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/app3.2.png)   
 
+Мой репозиторий с pipeline доступен по [ссылке](https://gitlab.com/rsafin2/neo-app-3)
+Текст pipeline также доступен по [ссылке](https://github.com/RSafin12/neoflex-linux-rsafin-task1/app3_pipeline.yaml)
 
 
 
