@@ -23,3 +23,19 @@ Pipeline работает
 ![app2_works2](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/app2_works2.png)  
 
 ### Задание 4
+Pipeline состоит из 2 этапов, первым идет Build  
+![build](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/kaniko_build.png)  
+
+Вторым этапом идет деплой
+![deploy](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/deploy_with_helm.png) 
+
+Приложение успешно развернулось в кластере
+![kubectl](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/kubectl_helm.png)   
+и доступно в браузере 
+![app3](https://github.com/RSafin12/neoflex-linux-rsafin-task1/blob/main/Screenshots/gitlab/app3.2.png)   
+
+
+
+
+
+
